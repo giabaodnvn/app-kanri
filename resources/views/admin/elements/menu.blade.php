@@ -7,29 +7,29 @@
             <a href="{{ route('admin.admin-dashboard') }}" class="nav-link {{ Request::is('admin/dashboard') ? 'active' : '' }}"><i class="nav-icon fas fa-tachometer-alt"></i><p>Dashboard</p></a>
         </li>
 
-{{--        <li class="nav-item {{Request::is('admin/users*') ? 'menu-open' : ''}}">--}}
-{{--            <a href="#" class="nav-link {{Request::is('admin/users*') ? 'active' : ''}}">--}}
-{{--                <i class="nav-icon fas fa-user"></i>--}}
-{{--                <p>--}}
-{{--                    Users--}}
-{{--                    <i class="right fas fa-angle-left"></i>--}}
-{{--                </p>--}}
-{{--            </a>--}}
-{{--            <ul class="nav nav-treeview">--}}
-{{--                <li class="nav-item">--}}
-{{--                    <a href="{{ route('admin.users.users-create') }}" class="nav-link {{ Request::is('admin/users/create') ? 'active' : '' }}">--}}
-{{--                        <i class="far fa-circle nav-icon"></i>--}}
-{{--                        <p>Add User</p>--}}
-{{--                    </a>--}}
-{{--                </li>--}}
-{{--                <li class="nav-item">--}}
-{{--                    <a href="{{ route('admin.users.users-list') }}" class="nav-link {{ Request::is('admin/users') ? 'active' : '' }}">--}}
-{{--                        <i class="far fa-circle nav-icon"></i>--}}
-{{--                        <p>List Users</p>--}}
-{{--                    </a>--}}
-{{--                </li>--}}
-{{--            </ul>--}}
-{{--        </li>--}}
+        <li class="nav-item {{Request::is('admin/users*') ? 'menu-open' : ''}}">
+            <a href="#" class="nav-link {{Request::is('admin/users*') ? 'active' : ''}}">
+                <i class="nav-icon fas fa-user"></i>
+                <p>
+                    Users
+                    <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="{{ route('admin.users.users-create') }}" class="nav-link {{ Request::is('admin/users/create') ? 'active' : '' }}">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Add User</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('admin.users.users-list') }}" class="nav-link {{ Request::is('admin/users') ? 'active' : '' }}">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>List Users</p>
+                    </a>
+                </li>
+            </ul>
+        </li>
 
         <li class="nav-item {{Request::is('admin/pages*') ? 'menu-open' : ''}}">
             <a href="#" class="nav-link {{Request::is('admin/pages*') ? 'active' : ''}}">
@@ -127,29 +127,29 @@
             </ul>
         </li>
 
-{{--        <li class="nav-item {{Request::is('admin/languages*') ? 'menu-open' : ''}}">--}}
-{{--            <a href="#" class="nav-link {{Request::is('admin/languages*') ? 'active' : ''}}">--}}
-{{--                <i class="nav-icon fas fa-tags"></i>--}}
-{{--                <p>--}}
-{{--                    Languages--}}
-{{--                    <i class="right fas fa-angle-left"></i>--}}
-{{--                </p>--}}
-{{--            </a>--}}
-{{--            <ul class="nav nav-treeview">--}}
-{{--                <li class="nav-item">--}}
-{{--                    <a href="{{ route('admin.languages.languages-create') }}" class="nav-link {{ Request::is('admin/languages/create') ? 'active' : '' }}">--}}
-{{--                        <i class="far fa-circle nav-icon"></i>--}}
-{{--                        <p>Add Language</p>--}}
-{{--                    </a>--}}
-{{--                </li>--}}
-{{--                <li class="nav-item">--}}
-{{--                    <a href="{{ route('admin.languages.languages-list') }}" class="nav-link {{ Request::is('admin/languages') ? 'active' : '' }}">--}}
-{{--                        <i class="far fa-circle nav-icon"></i>--}}
-{{--                        <p>List Languages</p>--}}
-{{--                    </a>--}}
-{{--                </li>--}}
-{{--            </ul>--}}
-{{--        </li>--}}
+        <li class="nav-item {{Request::is('admin/languages*') ? 'menu-open' : ''}}">
+            <a href="#" class="nav-link {{Request::is('admin/languages*') ? 'active' : ''}}">
+                <i class="nav-icon fas fa-tags"></i>
+                <p>
+                    Languages
+                    <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="{{ route('admin.languages.languages-create') }}" class="nav-link {{ Request::is('admin/languages/create') ? 'active' : '' }}">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Add Language</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('admin.languages.languages-list') }}" class="nav-link {{ Request::is('admin/languages') ? 'active' : '' }}">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>List Languages</p>
+                    </a>
+                </li>
+            </ul>
+        </li>
 
         <li class="nav-item {{Request::is('admin/contacts*') ? 'menu-open' : ''}}">
             <a href="#" class="nav-link {{Request::is('admin/contacts*') ? 'active' : ''}}">
