@@ -1,0 +1,181 @@
+@import "./_variables.scss";
+
+.logo {
+    width: 100px;
+}
+.nta-color {
+    color: $nta-color !important;
+}
+.single_services .services_content .services_title a:hover {
+    color: #F96300;
+}
+.single_services.active, .single_services:hover {
+    border-color: #F96300;
+}
+.single_services.active .services_icon .services_shape, .single_services:hover .services_icon .services_shape {
+    fill: #F96300;
+}
+.card {
+    height: 400px !important;
+    margin: 0 15px !important;
+    padding: 0 5px !important;
+    .card-img {
+        height: 70% !important;
+        object-fit: contain;
+    }
+    .card-body {
+        height: 30% !important;
+    }
+}
+.business-card {
+    height: 100% !important;
+}
+.nav-item-lang {
+    font-size: 16px;
+    font-weight: 600;
+    color: #747E88;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    padding: 10px 0;
+    position: relative;
+    margin-left: 45px;
+    a {
+        color: #747E88;
+    }
+    a:hover {
+        color: #F96300;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .nav-item-lang {
+        display: block;
+        margin: 0px;
+        padding: 4px 0;
+    }
+}
+@media (max-width: 767px) {
+    .nav-item-lang {
+        margin: 0px;
+        display: block;
+        padding: 4px 0;
+    }
+}
+.active-lang {
+    color: #F96300!important;
+}
+.blog_content {
+    .blog_title {
+        padding-bottom: 130px;
+    }
+    .more {
+        position: absolute;
+        bottom: 20px;
+    }
+}
+.slick-dots {
+    bottom: -40px!important;
+    li button:before {
+        font-size: 16px!important;
+        color: #F96300!important;
+    }
+    li.slick-active button:before {
+        color: #F96300!important;
+    }
+}
+.access_area .company-info__map {
+    max-width: 100%;
+}
+.company-info__access {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        color: #F96300;
+        margin-bottom: 20px;
+    }
+}
+.single_blog {
+    .blog_image {
+        height: 60% !important;
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.achievements table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.achievements th {
+    font-weight: bold;
+    text-align: center;
+}
+
+.achievements td, th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    vertical-align: middle;
+}
+
+.achievements tr:nth-child(even) {
+    background-color: #d6d4d426;
+}
+
+.achievements td {
+    text-align: left;
+}
+
+.achievements td:first-child, .achievements td:last-child, .achievements td:nth-child(4) {
+    text-align: center;
+}
+
+.achievements ul {
+    list-style-type: circle;
+    margin: 0 0 0 25px;
+    padding: 0;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+.container.company-info .achievements tr {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+.container.company-info .achievements tr.hidden {
+    animation-name: slideOut;
+    display: none;
+}
+
+.container.company-info .achievements tr.visible {
+    animation-name: slideIn;
+    display: table-row;
+}
